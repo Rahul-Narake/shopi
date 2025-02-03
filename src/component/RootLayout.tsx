@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import Navbar from './Navbar';
 import { Outlet, useNavigate } from 'react-router';
-import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import app from '../utils/db';
-import { useAppDispatch, useAppSelector } from '../hooks/redux/hook';
+import { useAppDispatch } from '../hooks/redux/hook';
 import { login } from '../features/user/userSlice';
 
 function RootLayout() {

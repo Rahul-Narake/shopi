@@ -1,6 +1,4 @@
-import { removeFromCart } from '../features/cart/cartSlice';
 import { IProduct } from '../features/product/productSlice';
-import { useAppDispatch } from '../hooks/redux/hook';
 
 function OrderItem({
   product,

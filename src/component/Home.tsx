@@ -8,7 +8,7 @@ import Cart from './Cart';
 import ProductInfo from './ProductInfo';
 import useAllProducts from '../hooks/products/useAllProducts';
 
-function Home({ path }: { path: string }) {
+function Home() {
   const dispatch = useAppDispatch();
   useAllProducts();
   const { isOpen, type } = useAppSelector((state) => state.sidebar);

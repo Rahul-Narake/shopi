@@ -1,9 +1,8 @@
-import { useAppDispatch, useAppSelector } from '../hooks/redux/hook';
+import { useAppSelector } from '../hooks/redux/hook';
 import { useNavigate } from 'react-router';
 
 function Orders() {
   const navigate = useNavigate();
-  const dispatch = useAppDispatch();
   const { myOrders } = useAppSelector((state) => state.order);
   if (myOrders.length > 0) {
     return (
