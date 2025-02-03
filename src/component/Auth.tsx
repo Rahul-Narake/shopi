@@ -74,18 +74,28 @@ const Auth = () => {
           <div>
             <span>
               Alraedy have account?{' '}
-              <a href="/signin" className="text-blue-500 underline">
+              <span
+                onClick={() => {
+                  navigate('/signin');
+                }}
+                className="text-blue-500 underline cursor-pointer"
+              >
                 Sign in
-              </a>
+              </span>
             </span>
           </div>
         ) : (
-          <div>
+          <div className="flex">
             <span>
               Don't have account?{' '}
-              <a href="/signup" className="text-blue-500 underline">
+              <span
+                onClick={() => {
+                  navigate('/signup');
+                }}
+                className="text-blue-500 underline cursor-pointer"
+              >
                 Sign up
-              </a>
+              </span>
             </span>
           </div>
         )}
